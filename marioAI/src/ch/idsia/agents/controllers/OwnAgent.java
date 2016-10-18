@@ -27,6 +27,8 @@
 
 package ch.idsia.agents.controllers;
 
+import java.util.Random;
+
 import ch.idsia.agents.Agent;
 import ch.idsia.benchmark.mario.engine.sprites.Mario;
 import ch.idsia.benchmark.mario.environments.Environment;
@@ -52,10 +54,16 @@ public OwnAgent()
 public void reset()
 {
     action = new boolean[Environment.numberOfKeys];
+    action[Mario.KEY_RIGHT] = true;
+    action[Mario.KEY_SPEED] = true;
+    
 }
 
 public boolean[] getAction()
 {
+	Random R = new Random();
+	action[Mario.KEY_JUMP] = R.nextBoolean();
+	
     return action;
 }
 }
