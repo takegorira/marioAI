@@ -66,9 +66,17 @@ public boolean isObstacle(int r, int c){
 
 public boolean[] getAction()
 {
+	System.out.println(getReceptiveFieldCellValue(marioEgoRow + 5, marioEgoCol + 1));
 	if(isObstacle(marioEgoRow, marioEgoCol + 1) || 
 			getEnemiesCellValue(marioEgoRow, marioEgoCol + 2) != Sprite.KIND_NONE
-			|| getEnemiesCellValue(marioEgoRow, marioEgoCol + 1) != Sprite.KIND_NONE){
+			|| getEnemiesCellValue(marioEgoRow, marioEgoCol + 1) != Sprite.KIND_NONE
+			|| (
+					getReceptiveFieldCellValue(marioEgoRow + 1, marioEgoCol + 1)==0
+					&& getReceptiveFieldCellValue(marioEgoRow + 2, marioEgoCol + 1)==0
+					&& getReceptiveFieldCellValue(marioEgoRow + 3, marioEgoCol + 1)==0
+					&& getReceptiveFieldCellValue(marioEgoRow + 4, marioEgoCol + 1)==0
+			)
+			){
 		action[Mario.KEY_JUMP] = isMarioAbleToJump || !isMarioOnGround;
 	}
     return action;
