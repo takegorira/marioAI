@@ -78,7 +78,7 @@ public boolean[] getAction()
 					&& getReceptiveFieldCellValue(marioEgoRow + 4, marioEgoCol + 1)==0
 			)
 			){
-		action[Mario.KEY_JUMP] = isMarioAbleToJump || !isMarioOnGround;  //条件を満たすならジャンプ
+		action[Mario.KEY_JUMP] = isMarioAbleToJump || !isMarioOnGround;  //条件を満たすならジャンプ（攻撃）
 	}
     return action;
 }

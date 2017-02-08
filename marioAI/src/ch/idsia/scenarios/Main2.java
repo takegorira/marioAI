@@ -35,6 +35,7 @@ import ch.idsia.agents.controllers.ForwardJumpingAgent;
 import ch.idsia.agents.controllers.IgnoreObstacleAgent;
 import ch.idsia.agents.controllers.OwnAgent;
 import ch.idsia.agents.controllers.ScaredAgent;
+import ch.idsia.agents.controllers.ScaredShooty;
 
 
 /**
@@ -47,7 +48,7 @@ public static void main(String[] args)
 {
     final MarioAIOptions marioAIOptions = new MarioAIOptions(args);
 
-    final Agent agent = new IgnoreObstacleAgent();
+    final Agent agent = new ScaredShooty();
     marioAIOptions.setAgent(agent);
     
     marioAIOptions.setEnemies("g");

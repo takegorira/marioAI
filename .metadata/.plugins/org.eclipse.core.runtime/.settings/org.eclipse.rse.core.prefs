@@ -1,2 +1,4 @@
+activeuserprofiles=Team;h22;h242
 eclipse.preferences.version=1
 org.eclipse.rse.systemtype.local.systemType.defaultUserId=admin
+useridperkey=h242.Local\=admin;

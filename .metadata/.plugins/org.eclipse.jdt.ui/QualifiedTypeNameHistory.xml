@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="ch.idsia.agents.controllers.ScaredAgent"/>
+<fullyQualifiedTypeName name="ch.idsia.agents.controllers.ForwardAgent"/>
+<fullyQualifiedTypeName name="ch.idsia.agents.controllers.OwnAgent"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="ch.idsia.agents.controllers.IgnoreObstacleAgent"/>
+<fullyQualifiedTypeName name="ch.idsia.agents.controllers.ScaredShooty"/>
+</qualifiedTypeNameHistroy>
